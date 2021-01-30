@@ -1,0 +1,183 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#mainSection {
+  /* background: url("images/bus.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover; */
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: url("images/bus.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+nav {
+  height: 50px;
+  width: 100%;
+  padding: 20px 0;
+}
+.container {
+  width: 1200px;
+  max-width: 85%;
+  margin: 0 auto;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px 6px;
+}
+nav ul li a {
+  color: #fff;
+  padding: 10px;
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+nav ul li a:hover,
+a.active {
+  background-color: #52af3a;
+  border-radius: 5px;
+}
+.main-content {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 70px;
+  align-items: center;
+}
+.booking-content {
+  color: #fff;
+  width: 100%;
+  float: left;
+  margin-left: 50px;
+}
+.booking-content h1 {
+  font-size: 70px;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+  font-weight: 500;
+}
+.booking-form {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  float: right;
+  width: 80%;
+  margin: 50px 0px 0px 80px;
+}
+.booking-form h3 {
+  margin: 10px 0px;
+}
+.booking-form .input-group {
+  margin: 10px 0;
+}
+.booking-form .calculations {
+  margin: 10px 0;
+}
+.booking-form .calculations p {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.booking-form input {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background: #f3f5ff;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+.booking-form .inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.f-class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.inp-width {
+  min-width: 100px;
+}
+.plus-minus-btn {
+  /* color: #3352f2; */
+  font-size: 30px;
+  padding: 2px;
+  margin: 10px 10px 0px 0px;
+  word-spacing: 3px;
+}
+.btn-style {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  background-color: #52af3a;
+}
+.amount {
+  display: flex;
+  justify-content: space-between;
+}
+
+.plus-minus-btn span {
+  display: inline;
+}
+
+.plus-minus-btn a {
+  color: #3352f2;
+}
+
+#confirmation {
+  /* background-color: white; */
+  padding: 30px;
+}
+#confirmation div {
+  width: 70%;
+  margin: 100px auto;
+  padding: 50px;
+  box-shadow: 5px 5px 10px rgba(5, 5, 36, 0.849);
+  border-radius: 10px;
+  background-color: #fff;
+  background-image: url("images/map.svg");
+}
+
+#confirmation div h1,
+#confirmation div p {
+  text-align: center;
+  padding: 10px;
+}
+
+#confirmation div h1 {
+  font-size: 30px;
+}
+#confirmation div .busName {
+  color: tomato;
+}
+
+#confirmation {
+  display: none;
+}
+#confirmation div p {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  color: rgba(5, 5, 36, 0.849);
+}
+
+#firstClassTotal,
+#economyClassTotal {
+  display: none;
+}
